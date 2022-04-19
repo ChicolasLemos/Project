@@ -12,7 +12,7 @@ access-list 2 permit 192.168.0.0 0.0.255.255
 ```
 Then go to their interfaces
 ```
-int s0/0/0/
+int s0/0/0
 ip nat outside
 ```
 ```
