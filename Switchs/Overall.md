@@ -1,5 +1,6 @@
 Overall the switches are practically the same configuration, the only thing that changes are the "channel-groups" and the "port-channel"
-I added spanning-tree just to change the priority of the vlans
+I added spanning-tree just to change the priority of the vlans.
+
 SWITCH7
 ```
 spanning-tree vlan 10 priority 24576
