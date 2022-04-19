@@ -9,12 +9,10 @@ In the command "name" the next word is the name of the vlan
 ```
 vlan 10
 name v10
-```
-```
+
 vlan 20
 name v20
-```
-```
+
 vlan 30
 name v30
 ```
