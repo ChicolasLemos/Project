@@ -20,12 +20,14 @@ crypto map OMAPA 10 ipsec-isakmp
 ```
 ```
 interface Tunnel100
+ no shutdown
  ip address 192.168.2.1 255.255.255.252
  tunnel source Serial0/0/0
  tunnel destination 1.2.0.2
 ```
 ```
 interface Serial0/0/0
+ no shutdown
  ip address 1.2.0.1 255.255.255.252
  ip nat outside
  ip virtual-reassembly in
@@ -56,12 +58,14 @@ crypto map MAPA 10 ipsec-isakmp
 ```
 ```
 interface Tunnel200
+ no shutdown
  ip address 192.168.2.5 255.255.255.252
  tunnel source Serial0/0/1
  tunnel destination 2.2.0.2
 ```
 ```
 interface Serial0/0/1
+ no shutdown
  ip address 2.2.0.1 255.255.255.252
  ip nat outside
  ip virtual-reassembly in
