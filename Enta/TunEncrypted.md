@@ -54,7 +54,7 @@ crypto ipsec transform-set TRANS2 ah-sha-hmac esp-aes 256 esp-sha-hmac mode tunn
 crypto map MAPA 10 ipsec-isakmp 
  set peer 2.2.0.2
  set transform-set TRANS2
- match address 100
+ match address 101
 ```
 ```
 interface Tunnel200
@@ -72,5 +72,5 @@ interface Serial0/0/1
  crypto map MAPA
 ```
 ```
-access-list 100 permit gre host 2.2.0.1 host 2.2.0.2
+access-list 101 permit gre host 2.2.0.1 host 2.2.0.2
 ```
