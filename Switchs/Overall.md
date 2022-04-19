@@ -7,28 +7,34 @@ spanning-tree vlan 20 priority 28672
 ```
 ```
 interface Port-channel1
+ no shutdown
  switchport mode trunk
 ```
 ```
 interface FastEthernet0/3
+ no shutdown
  switchport mode trunk
 !
 interface FastEthernet0/4
+ no shutdown
  switchport mode trunk
 ```
 ```
 interface FastEthernet0/11
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 1 mode active
 !
 interface FastEthernet0/12
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 1 mode active
 ```
 ```
 interface FastEthernet0/15
+ no shutdown
  switchport mode trunk
 ```
 SWITCH9
@@ -38,20 +44,24 @@ spanning-tree vlan 30 priority 24576
 ```
 ```
 interface Port-channel1
+ no shutdown
  switchport mode trunk
 ```
 ```
 interface FastEthernet0/11
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 1 mode active
 !
 interface FastEthernet0/12
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 1 mode active
 !         
 interface FastEthernet0/13
+ no shutdown
  switchport mode trunk
 ```
 SWITCH11
@@ -60,16 +70,19 @@ spanning-tree vlan 30 priority 28672
 ```
 ```
 interface Port-channel2
+ no shutdown
  switchport mode trunk
 ```
 ```
 interface FastEthernet0/4
+ no shutdown
  switchport access vlan 30
  switchport mode access
 ```
 The voice vlan is for the telephony-service
 ```
 interface FastEthernet0/5
+ no shutdown
  switchport mode access
  switchport voice vlan 20
  mls qos trust cos
@@ -77,40 +90,48 @@ interface FastEthernet0/5
 ```
 ```
 interface FastEthernet0/11
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 2 mode active
 !         
 interface FastEthernet0/12
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 2 mode active
 !
 interface FastEthernet0/13
+ no shutdown
  switchport mode trunk
 ```
 SWITCH14
 ```
 interface Port-channel2
+ no shutdown
  switchport mode trunk
 ```
 ```
 interface FastEthernet0/4
+ no shutdown
  switchport access vlan 10
  switchport mode access
 ```
 ```
 interface FastEthernet0/11
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 2 mode active
 !
 interface FastEthernet0/12
+ no shutdown
  switchport mode trunk
  channel-protocol lacp
  channel-group 2 mode active
 ```
 ```
 interface FastEthernet0/15
+ no shutdown
  switchport mode trunk
 ```
