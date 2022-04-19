@@ -29,13 +29,13 @@ interface GigabitEthernet1/5
  nameif outside2
  security-level 0
 !
-interface BVI1
+interface Bvi1
  no shutdown
  nameif inside
  security-level 100
  ip address 172.18.2.1 255.255.255.0 
 !
-interface BVI2
+interface Bvi2
  no shutdown
  nameif outside
  security-level 0
