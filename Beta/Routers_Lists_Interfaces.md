@@ -27,6 +27,7 @@ access-list 100 permit ip any 2.2.0.0 0.0.0.3
 Interfaces
 ```
 interface FastEthernet0/0
+ no shutdown
  ip address 172.16.2.3 255.255.255.0
  ip nat inside
  ip virtual-reassembly in
@@ -35,6 +36,7 @@ interface FastEthernet0/0
 ```
 ```
 interface Serial0/1/1
+ no shutdown
  ip address 2.2.0.2 255.255.255.252
  ip nat outside
  ip virtual-reassembly in
