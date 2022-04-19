@@ -2,8 +2,6 @@ This is from BETA
 ```
 router eigrp 200
  network 172.16.2.0 0.0.0.255
- network 172.17.2.0 0.0.0.255
- network 172.18.2.0 0.0.0.255
  network 192.168.2.4 0.0.0.3
  redistribute static
  passive-interface FastEthernet0/0
