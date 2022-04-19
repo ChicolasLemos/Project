@@ -1,10 +1,13 @@
 Overall the switches are practically the same configuration, the only thing that changes are the "channel-groups" and the "port-channel"
-I added spanning-tree just to change the priority of the vlans.
+I added spanning-tree just to change the priority of the vlans
 
-SWITCH7(1)
+In every SWITCH you need to do the following command
+The "enta.pt" is the name of my domain (you can chose yours)
 ```
 vtp domain enta.pt
-``` 
+```
+
+SWITCH7(1)
 In the command "name" the next word is the name of the vlan
 ```
 vlan 10
