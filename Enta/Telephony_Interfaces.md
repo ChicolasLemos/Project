@@ -19,6 +19,7 @@ ephone-dn  2
 I created these virtual interfaces for the telephony-services
 ```
 interface GigabitEthernet0/0.10
+ no shutdown
  encapsulation dot1Q 10
  ip address 10.0.2.1 255.255.255.0
  ip nat inside
@@ -26,6 +27,7 @@ interface GigabitEthernet0/0.10
 ```
 ```
 interface GigabitEthernet0/0.20
+ no shutdown
  encapsulation dot1Q 20
  ip address 10.1.2.1 255.255.255.0
  ip nat inside
@@ -33,6 +35,7 @@ interface GigabitEthernet0/0.20
 ```
 ```
 interface GigabitEthernet0/0.30
+ no shutdown
  encapsulation dot1Q 30
  ip address 10.2.2.1 255.255.255.0
  ip nat inside
