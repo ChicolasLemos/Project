@@ -16,7 +16,7 @@ crypto ipsec transform-set TRANS ah-sha-hmac esp-aes 256 esp-sha-hmac
 crypto map OMAPA 10 ipsec-isakmp 
  set peer 1.2.0.1
  set transform-set TRANS 
- match address 100
+ match address 101
 ```
 ```
 interface Tunnel100
@@ -35,5 +35,5 @@ interface Serial0/1/1
  crypto map OMAPA
 ```
 ```
-access-list 100 permit gre host 1.2.0.2 host 1.2.0.1
+access-list 101 permit gre host 1.2.0.2 host 1.2.0.1
 ```
