@@ -1,5 +1,5 @@
 # Project
-Somethings were changed because there is somethings missing on the image. Also some commands are diferent because these were programmed "physically"
+Somethings were changed because there is somethings missing on the image. Also some commands are different because these were programmed "physically"
 
 What is missing/changed:
 1. There is another interface f0/11 on SW3 and SW4 (so you can do a channel-group).
