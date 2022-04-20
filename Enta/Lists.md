@@ -10,7 +10,7 @@ access-list 2 permit 10.0.0.0 0.255.255.255
 access-list 2 permit 172.16.0.0 0.15.255.255
 access-list 2 permit 192.168.0.0 0.0.255.255
 ```
-Then go to their interfaces
+Remember that you need to do the "ip nat"
 ```
 int s0/0/0
 ip nat outside
